@@ -1,5 +1,699 @@
 @import bin/setting
 @import bin/reset
-
 @import bin/mixins
 @import page/index
+.header
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 100%
+	left: 0
+	top: 0
+	&-container
+		width: 100%
+		max-width: 1140px
+		z-index: 10
+	&-top
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		padding-top: 6px
+		padding-bottom: 16px
+		&-contact
+			display: flex
+			flex-direction: row
+			text-decoration: none
+			color: #272727
+			+rfs(16px)
+			&-left
+				display: flex
+				align-items: center
+			&-right
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				padding-left: 5px
+		&__text
+			font-weight: 800
+		&__phone
+			font-weight: 300
+		&-logo
+			display: flex
+			align-items: center
+			flex-direction: column
+			&__letters
+				display: flex
+			&__symb1
+				padding-left: 6px
+				color: #FFD600
+				text-shadow: 1px 1px 3px rgba(141, 110, 0, 0.25)
+				transform: rotate(90deg)
+				+rfs(36)
+			&__symb2
+				padding-left: 5px
+				color: #FFD600
+				text-shadow: 1px 1px 3px rgba(141, 110, 0, 0.25)
+				transform: rotate(90deg)
+				+rfs(36)
+			&__title
+				color: #0055B8
+				+rfs(14px)
+		&-time
+			display: flex
+			flex-direction: row
+			text-decoration: none
+			color: #272727
+			+rfs(16px)
+			&-left
+				display: flex
+				align-items: center
+			&-right
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				padding-left: 5px
+			&__open
+				color: #00B007
+.nav
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-container
+		display: flex
+		justify-content: space-between
+		align-items: center
+		border-radius: 5px
+		background-color: #0055B8
+		width: 100%
+		max-width: 1140px
+		z-index: 10
+	&__link
+		text-decoration: none
+		color: white
+		&:visited
+			text-decoration: none
+			color: white
+	&-list
+		display: flex
+		flex-direction: row
+		+rfs(18px)
+	&__item
+		color: white
+		padding: 23px
+		+rfs(18px)
+	&-socials
+		display: flex
+		flex-direction: row
+		padding-right: 30px
+		&__item
+			display: flex
+			align-items: center
+			padding: 7px
+.main
+	width: 100%
+	&-container
+		width: 100%
+.intro
+	display: flex
+	flex-direction: column
+	align-items: center
+	width: 100%
+	height: 900px
+	background: url('../img/ispravlenie-prikusa-1.png') 50% 50% no-repeat
+	background-color: #EEE
+	transform: translateY(-27px)
+	z-index: 0
+	&-container
+		width: 100%
+		max-width: 1140px
+		z-index: 1
+	&__p1
+		padding-top: 331px
+		+rfs(18px)
+		color: #272727
+	&__title
+		width: 50%
+		+rfs(48px)
+		text-transform: uppercase
+		font-weight: bold
+		color: #272727
+		padding-top: 10px
+		padding-bottom: 27px
+	&__button
+		width: 265px
+		height: 70px
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: #0055B8
+		border-radius: 5px
+		text-decoration: none
+		color: white
+		+rfs(18px)
+		z-index: 100
+		margin-bottom: 170px
+	&-arrows
+		display: flex
+		align-items: stretch
+		height: 70px
+		&__item
+			display: flex
+			align-items: center
+			justify-content: center
+			margin-right: 5px
+			background-color: #FFD600
+			border-radius: 5px
+			padding: 10px
+			width: 42px
+			&:last-child
+				width: 70px
+.appoint
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	transform: translateY(-27px)
+	&-container
+		width: 100%
+		display: flex
+		justify-content: center
+		align-items: stretch
+		max-width: 1140px
+	&-block
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		width: 300px
+		height: 300px
+		min-width: 300px
+		background-color: #FFE040
+		border-radius: 5px
+		padding: 37px
+		&:first-child
+			background-color: #FFD600
+	&__img
+		padding-bottom: 15px
+	&__title
+		padding-bottom: 5px
+		line-height: 25px
+		font-weight: 600
+		+rfs(18px)
+		color: #272727
+	&__descr
+		+rfs(18px)
+		font-weight: 300
+		color: #272727
+		line-height: 25px
+	&__form
+		position: relative
+		top: -60px
+		height: 360px
+	&-form
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: flex-start
+		background-color: #0055B8
+		border-radius: 5px
+		padding: 33px
+		&__title
+			color: white
+			+rfs(36px)
+			padding-bottom: 20px
+		&__input
+			border-radius: 5px !important
+			width: 100%
+			height: 55px
+			border: solid 1px white
+			background-color: #0055B8
+			margin-bottom: 12px
+			padding: 15px
+			color: rgba(255, 255, 255, 0.5)
+			+rfs(14px)
+		&__button
+			width: 230px
+			height: 55px
+			background-color: #FFD600
+			border: none
+			font-weight: 500px
+			border-radius: 5px
+		&-checkpanel
+			display: flex
+			justify-content: space-between
+			align-items: center
+			color: white
+			padding-top: 15px
+			&__descr
+				width: 60%
+				font-weight: 300
+				+rfs(18px)
+			&__checkbox
+				width: 10%
+.body
+	background-color: #E5E5E5
+	&__dp
+		position: absolute
+		+rfs(120px)
+		color: rgba(0, 0, 0, 0.05)
+		font-weight: bold
+		z-index: -1
+	&__line
+		width: 50px
+		height: 0px
+		border-bottom: 3px solid #FFD600
+	&__title
+		+rfs(36px)
+		color: #4D4D4D
+		padding-bottom: 10px
+		padding-top: 18px
+		font-weight: bold
+	&__descr
+		text-align: center
+		width: 744px
+		+rfs(18px)
+		color: #4D4D4D
+		line-height: 25px
+	&__arrow_b
+		width: 42px
+		min-width: 42px 
+		height: 49px
+		border: 2px solid #1D6ECB
+		border-radius: 5px
+		&:after
+			display: block
+			position: relative
+			content: ""
+			left: 15px
+			top: 15px
+			width: 15px
+			height: 15px 
+			border: 2px solid #1D6ECB
+			border-width: 0 2px 2px 0
+			transform: rotate(135deg)
+	&__arrow_f
+		width: 42px
+		min-width: 42px 
+		height: 49px
+		border: 2px solid #1D6ECB
+		border-radius: 5px
+		&:after
+			display: block
+			position: relative
+			content: ""
+			left: 10px
+			top: 15px
+			width: 15px
+			height: 15px 
+			border: 2px solid #1D6ECB
+			border-width: 0 2px 2px 0
+			transform: rotate(-45deg)
+.rub 
+	font-family: 'rouble'
+.services
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-container
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		max-width: 1140px
+	&-top
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__title
+		&__descr
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: center
+	&-panel
+		display: flex
+		align-items: center
+		padding: 25px
+		padding-top: 35px
+		&__item
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			background-color: white
+			border-radius: 5xp
+			width: 200px
+			height: 240px
+			box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1)
+			padding: 17px
+			margin: 17px
+	&__img
+		padding: 10px
+	&__title
+		height: 42px
+		width: 100px
+		+rfs(18px)
+		text-align: center
+	&__line
+		width: 25px
+		height: 2px
+		border: 1px solid #0A60C3
+		margin-bottom: 10px
+		margin-top: 10px
+	&__oldprice
+		font-family: 'PT Sans'
+		text-align: center
+		+rfs(14px)
+		color: rgba(0, 0, 0, 0.25)
+		text-decoration-line: line-through
+		:after
+			content: "\20BD"
+	&__newprice
+		padding-top: 3px
+		font-weight: bold
+		text-align: center
+		+rfs(18px)
+		color: #0A60C3
+	&__arrow
+.technology
+	display: flex
+	justify-content: center
+	width: 100%
+	&-container
+		width: 100%
+		max-width: 1920px
+		display: flex
+		justify-content: center
+	&__img
+		width: 40%
+		margin-right: 100px
+		background: url('../img/19465.png') 100% 50% no-repeat
+	&-column
+		width: 50%
+	&__title
+		text-align: left 
+		width: 70%
+	&__descr
+		width: 80%
+		text-align: left
+		padding-bottom: 20px
+		line-height: 25px
+	&__item
+		display: flex
+	&-item
+		&__img
+			width: 70px
+			height: 70px
+			margin-right: 20px
+		&__title
+			+rfs(18px)
+			font-weight: bold
+			padding-bottom: 10px
+		&__descr
+			width: 70%
+			color: #4D4D4D
+			+rfs(14px)
+			margin-bottom: 30px
+.team
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-container
+		padding-top: 40px
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		max-width: 1140px
+	&-top
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__descr
+			width: 900px
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: center
+	&-panel
+		display: flex
+		align-items: center
+		padding: 25px
+		padding-top: 35px
+		&__item
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: center
+			border-radius: 5xp
+			width: 300px
+			height: 400px
+			margin: 17px
+	&__img
+	&__title
+		padding-top: 5px
+		height: 42px
+		width: 100%
+		+rfs(18px)
+		text-align: left
+		font-weight: bold
+		padding-bottom: 3px
+	&__descr
+		width: 100%
+		text-align: left
+.sure
+	display: flex
+	justify-content: center
+	width: 100%
+	&__dp
+		transform: translateY(-25px)
+	&-container
+		padding-top: 50px
+		width: 100%
+		max-width: 1920px
+		height: 600px
+		display: flex
+		justify-content: flex-end
+	&__img
+		width: 30%
+		margin-left: 50px
+		background: url('../img/sure.png') 0% 50% no-repeat
+	&-column
+		display: flex
+		flex-direction: column
+		align-items: start
+		justify-content: center
+		width: 60%
+	&__title
+		text-align: left
+		width: 60%
+	&__descr
+		width: 100%
+		text-align: left
+		padding-bottom: 20px
+		line-height: 25px
+	&-bottom
+		width: 100%
+		padding-top: 35px
+		display: flex
+		justify-content: flex-end
+	&__signature
+		padding-right: 50px
+	&__button
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 265px
+		height: 70px
+		background-color: #0055B8
+		border-radius: 5px
+		color: white
+		text-decoration: none
+		+rfs(18px)
+.reviews
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-container
+		padding-top: 40px
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		max-width: 1140px
+	&-top
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__descr
+			width: 500px
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: center
+	&-panel
+		display: flex
+		align-items: flex-start
+		padding: 25px
+		padding-top: 35px
+		&__item
+			display: flex
+			flex-direction: column
+			justify-content: flex-start
+			align-items: flex-start
+			border-radius: 5xp
+			width: 380px
+			margin: 17px
+	&__img
+	&__title
+		padding-top: 15px
+		width: 100%
+		+rfs(18px)
+		text-align: left
+		font-weight: bold
+		padding-bottom: 3px
+	&__descr
+		padding-top: 15px
+		line-height: 25px
+		width: 100%
+		text-align: left
+	&__feedback
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #4D4D4D
+		width: 265px
+		height: 70px
+		border: 2px solid #0055B8
+		border-radius: 5px
+		text-decoration: none
+		+rfs(18px)
+.contact
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-container
+		padding-top: 40px
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		max-width: 1140px
+	&-top
+		display: flex
+		flex-direction: column
+		align-items: center
+		&__descr
+			width: 900px
+			padding-bottom: 20px
+	&__map
+		width: 1440px
+		height: 600px
+	&__form
+		position: absolute
+		transform: translate(-300px, 50px)
+		width: 550px
+		z-index: 0
+	&__nav
+		position: absolute
+		transform: translateY(-10px)
+		z-index: 10
+.footer
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	width: 100%
+	&-container
+		padding-top: 40px
+		width: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		max-width: 1140px
+	&-top
+		width: 100%	
+		display: flex
+		justify-content: space-between
+		height: 300px
+		padding-top: 30px
+	&-list
+		&__title
+			padding-left: 8px
+			+rfs(30px)
+		&__ul
+			display: flex
+			flex-flow: column wrap
+			height: 80%
+		&__item
+			width: 40%
+			padding: 8px
+			&-d
+				width: 80%
+				padding: 8px
+				a
+					text-decoration: none
+					color: black
+	&-contact
+		width: 25%
+		display: flex
+		flex-direction: column
+		margin-right: 50px
+		&__links
+			display: flex
+			align-items: center
+			padding-top: 15px
+			width: 90%
+		&__link
+			color: black
+			padding-left: 10px
+	&__privacy
+		padding-top: 60px
+		width: 50%
+		+rfs(14px)
+		color: rgba(0, 0, 0, 0.3)
+	&__services
+		width: 50%
+	&__documents
+		width: 25%
+	&__number
+		width: 100%
+		text-align: right
+		+rfs(30px)
+		text-decoration: none
+		color: black
+	&__request
+		width: 100%
+		text-align: right
+		+rfs(18px)
+		text-decoration-line: underline
+		color: black
+	&-bottom
+		display: flex
+		justify-content: center
+		width: 100%
+		border-top: 1px solid rgba(0, 0, 0, 0.3)
+	&__offer
+		text-align: center
+		margin-top: 22px
+		color: rgba(0, 0, 0, 0.3)
+		+rfs(14px)
+		width: 40%
+
+		
+
+
+

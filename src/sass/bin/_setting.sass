@@ -1,8 +1,17 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap-grid'
 @import '../../../node_modules/rfs/sass/_rfs'
+@font-face 
+    font-family: 'Roboto'
+    src: local('../fonts/Roboto'), local('../fonts/Roboto-Regular'), url('../fonts/Roboto.woff2') format('woff2'), url('../fonts/Roboto.woff') format('woff'), url('../fonts/Roboto.ttf') format('truetype')
+    font-weight: 400
+    font-style: normal
+@font-face 
+	font-family: 'rouble'
+	src: local('../fonts/rouble'), url('../fonts/rouble.ttf') format('truetype')
 
-$osans: 'Open Sans', sans-serif
+$roboto: 'Roboto'
 
 body
 	position: relative
-	font-family: $osans
+	font-family: $roboto
+	+rfs(18px)
