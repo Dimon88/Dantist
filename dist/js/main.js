@@ -1,2 +1,2 @@
-
+$(window).ready(function(){$(".services-panel").slick({infinite:!0,slidesToShow:3,slidesToScroll:1,prevArrow:$(".services__arrow_b"),nextArrow:$(".services__arrow_f"),dots:!1,arrows:!0,variableWidth:!0}),$(".team-panel").slick({infinite:!0,slidesToShow:2,slidesToScroll:1,prevArrow:$(".team__arrow_b"),nextArrow:$(".team__arrow_f"),dots:!1,arrows:!0,variableWidth:!0}),$(".intro-list").slick({infinite:!0,slidesToShow:1,slidesToScroll:1,prevArrow:$(".intro__b"),nextArrow:$(".intro__f"),dots:!1,arrows:!0,variableWidth:!0})});
 //# sourceMappingURL=main.js.map

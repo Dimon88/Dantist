@@ -3,7 +3,6 @@
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.23.6'><\/script>".replace("HOST", location.hostname));
 //]]></script>
-
 <main class="main">
 	<div class="main-container">
 		<div class="nav">
@@ -28,10 +27,10 @@
 				<h2 class="intro__title">get a brilliant smile for every day</h2>
 				<a href="#" class="intro__button" >GET</a>
 				<div class="intro-arrows">
-					<a href="#" class="intro-arrows__item">
+					<a href="#" class="intro-arrows-item intro__b">
 						<img src="../img/Arrow 1.png" alt="">
 					</a>
-					<a href="#" class="intro-arrows__item">
+					<a href="#" class="intro-arrows-item intro__f">
 						<img src="../img/Arrow 2.png" alt="">
 					</a>
 				</div>
@@ -73,38 +72,48 @@
 					<div class="sevices-top__descr body__descr">We provide a wide range of services from treatment to prosthetics. Therefore, you do not need to go anywhere else</div>
 				</div>
 				<div class="services-bottom">
-					<div class="services__arrows body__arrow_b"></div>
-					<div class="services-panel">
-						<section class="services-panel__item">
-							<img src="../img/s2.png" alt="Dental treatment" class="services__img">
-							<div class="services__title">Dental treatment</div>
-							<div class="services__line"></div>
-							<div class="services__oldprice">5000<span class="rub">i</span></div>
-							<div class="services__newprice">3100<span class="rub">i</span></div>
-						</section>
-						<section class="services-panel__item">
-							<img src="../img/s3.png" alt="Hygiene" class="services__img">
-							<div class="services__title">Hygiene</div>
-							<div class="services__line"></div>
-							<div class="services__oldprice">6000<span class="rub">i</span></div>
-							<div class="services__newprice">3500<span class="rub">i</span></div>
-						</section>
-						<section class="services-panel__item">
-							<img src="../img/s4.png" alt="Diagnostics" class="services__img">
-							<div class="services__title">Diagnostics</div>
-							<div class="services__line"></div>
-							<div class="services__oldprice">1000<span class="rub">i</span></div>
-							<div class="services__newprice">FREE</div>
-						</section>
-						<section class="services-panel__item">
-							<img src="../img/s5.png" alt="Children’s dentistry" class="services__img">
-							<div class="services__title">Children’s dentistry</div>
-							<div class="services__line"></div>
-							<div class="services__oldprice">6000<span class="rub">i</span></div>
-							<div class="services__newprice">3500<span class="rub">i</span></div>
-						</section>
+					<div class="services__arrow_b body__arrow_b"></div>
+					<div class="services-panel-container">
+						<div class="services-panel">
+							<div class="services-item-container">
+								<section class="services-panel__item">
+									<img src="../img/s2.png" alt="Dental treatment" class="services__img">
+									<div class="services__title">Dental treatment</div>
+									<div class="services__line"></div>
+									<div class="services__oldprice">5000<span class="rub">i</span></div>
+									<div class="services__newprice">3100<span class="rub">i</span></div>
+								</section>
+							</div>
+							<div class="services-item-container">
+								<section class="services-panel__item">
+									<img src="../img/s3.png" alt="Hygiene" class="services__img">
+									<div class="services__title">Hygiene</div>
+									<div class="services__line"></div>
+									<div class="services__oldprice">6000<span class="rub">i</span></div>
+									<div class="services__newprice">3500<span class="rub">i</span></div>
+								</section>
+							</div>
+							<div class="services-item-container">
+								<section class="services-panel__item">
+									<img src="../img/s4.png" alt="Diagnostics" class="services__img">
+									<div class="services__title">Diagnostics</div>
+									<div class="services__line"></div>
+									<div class="services__oldprice">1000<span class="rub">i</span></div>
+									<div class="services__newprice">FREE</div>
+								</section>
+							</div>
+							<div class="services-item-container">
+								<section class="services-panel__item">
+									<img src="../img/s5.png" alt="Children’s dentistry" class="services__img">
+									<div class="services__title">Children’s dentistry</div>
+									<div class="services__line"></div>
+									<div class="services__oldprice">6000<span class="rub">i</span></div>
+									<div class="services__newprice">3500<span class="rub">i</span></div>
+								</section>
+							</div>
+						</div>
 					</div>
-					<div class="services__arrows body__arrow_f"></div>
+					<div class="services__arrow_f body__arrow_f"></div>
 				</div>
 			</div>
 		</div>
@@ -149,25 +158,27 @@
 					<div class="team-top__descr body__descr">Dental Practice employs orthodontists and orthopedists, surgeons and therapists, as well as children's dentists. All 13 dentists of our center are highly qualified specialists with extensive experience.</div>
 				</div>	
 				<div class="team-bottom">
-					<div class="team__arrows body__arrow_b"></div>
-					<div class="team-panel">
-						<section class="team-panel__item">
-							<img src="../img/team1.png" alt="Dental treatment" class="team__img">
-							<div class="team__title">Anna Petrova</div>
-							<div class="team__descr">Expert-class dentist</div>
-						</section>
-						<section class="team-panel__item">
-							<img src="../img/team3.png" alt="Dental treatment" class="team__img">
-							<div class="team__title">Ivan Ivanov</div>
-							<div class="team__descr">Expert-class dentist</div>
-						</section>
-						<section class="team-panel__item">
-							<img src="../img/team2.png" alt="Dental treatment" class="team__img">
-							<div class="team__title">Larisa Vasileva</div>
-							<div class="team__descr">Expert-class dentist</div>
-						</section>
-					</div>
-					<div class="team__arrows body__arrow_f"></div>
+					<div class="team__arrow_b body__arrow_b"></div>
+						<div class="team-panel-container">
+							<div class="team-panel">
+								<section class="team-panel__item">
+									<img src="../img/team1.png" alt="Dental treatment" class="team__img">
+									<div class="team__title">Anna Petrova</div>
+									<div class="team__descr">Expert-class dentist</div>
+								</section>
+								<section class="team-panel__item">
+									<img src="../img/team3.png" alt="Dental treatment" class="team__img">
+									<div class="team__title">Ivan Ivanov</div>
+									<div class="team__descr">Expert-class dentist</div>
+								</section>
+								<section class="team-panel__item">
+									<img src="../img/team2.png" alt="Dental treatment" class="team__img">
+									<div class="team__title">Larisa Vasileva</div>
+									<div class="team__descr">Expert-class dentist</div>
+								</section>
+							</div>
+						</div>
+					<div class="team__arrow_f body__arrow_f"></div>
 				</div>
 			</div>
 		</div>

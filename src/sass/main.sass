@@ -158,7 +158,7 @@
 		display: flex
 		align-items: stretch
 		height: 70px
-		&__item
+		&-item
 			display: flex
 			align-items: center
 			justify-content: center
@@ -277,6 +277,7 @@
 		color: #4D4D4D
 		line-height: 25px
 	&__arrow_b
+		display: block
 		width: 42px
 		min-width: 42px 
 		height: 49px
@@ -294,6 +295,7 @@
 			border-width: 0 2px 2px 0
 			transform: rotate(135deg)
 	&__arrow_f
+		display: block
 		width: 42px
 		min-width: 42px 
 		height: 49px
@@ -333,24 +335,30 @@
 	&-bottom
 		display: flex
 		align-items: center
-		justify-content: center
+		width: 100%
 	&-panel
 		display: flex
 		align-items: center
 		padding: 25px
+		margin: 5px
 		padding-top: 35px
+		&-item-container
+			padding: 15px
 		&__item
-			display: flex
+			display: flex !important
 			flex-direction: column
 			justify-content: center
 			align-items: center
 			background-color: white
 			border-radius: 5xp
-			width: 200px
+			width: 200px 
 			height: 240px
-			box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.1)
+			box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1)
 			padding: 17px
 			margin: 17px
+		&-container
+			width: 100%
+			max-width: 1040px
 	&__img
 		padding: 10px
 	&__title
@@ -440,12 +448,14 @@
 	&-bottom
 		display: flex
 		align-items: center
-		justify-content: center
 	&-panel
 		display: flex
 		align-items: center
 		padding: 25px
 		padding-top: 35px
+		&-container
+			width: 100%
+			max-width: 1040px
 		&__item
 			display: flex
 			flex-direction: column
@@ -538,11 +548,14 @@
 			width: 500px
 	&-bottom
 		display: flex
-		align-items: center
-		justify-content: center
+		justify-content: flex-start
+		align-items: flex-start
+
+		
 	&-panel
 		display: flex
 		align-items: flex-start
+		justify-content: flex-start
 		padding: 25px
 		padding-top: 35px
 		&__item
