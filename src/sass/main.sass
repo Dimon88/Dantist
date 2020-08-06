@@ -77,7 +77,9 @@
 				padding-left: 5px
 			&__open
 				color: #00B007
-
+.main
+	&-container
+	min-width: 600px
 .nav
 	display: flex
 	justify-content: center
@@ -210,7 +212,7 @@
 	height: 900px
 	+r(sm)
 		background-size: auto 600px
-		background-position: 50% 10%
+		background-position: 70% 10%
 		background-color: #FFF
 	background: url('../img/ispravlenie-prikusa-1.png') 50% 10% no-repeat
 	background-color: #EEE
@@ -236,7 +238,7 @@
 			text-align: center
 			width: 50%
 			order: 3
-			padding-top: 40px
+			padding-top: 60px
 			+rfs(28px)
 	&__title
 		width: 50%
@@ -251,6 +253,7 @@
 			+rfs(40px)
 			order: 4
 			width: 80%
+			padding-bottom: 80px
 	&__button
 		width: 265px
 		height: 70px
@@ -269,11 +272,12 @@
 	&-arrows
 		display: flex
 		align-items: stretch
-		height: 70px
+		width: 100%
 		+r(sm)
-			padding-left: 40px
-			padding-top: 550px
+			padding-top: 500px
+			padding-left: 30px
 		&-item
+			height: 70px
 			display: flex
 			align-items: center
 			justify-content: center
@@ -395,6 +399,8 @@
 		line-height: 25px
 	&__arrow_b
 		display: block
+		+r(sm)
+			display: none
 		width: 42px
 		min-width: 42px 
 		height: 49px
@@ -402,6 +408,8 @@
 		border-radius: 5px
 		&:after
 			display: block
+			+r(sm)
+				display: none
 			position: relative
 			content: ""
 			left: 15px
@@ -418,6 +426,8 @@
 		height: 49px
 		border: 2px solid #1D6ECB
 		border-radius: 5px
+		+r(sm)
+			display: none
 		&:after
 			display: block
 			position: relative
