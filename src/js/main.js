@@ -10,7 +10,16 @@ $(window).ready(function () {
 	  nextArrow: $('.services__arrow_f'),
 	  dots: false,
 	  arrows: true,
-	  variableWidth: true
+	  variableWidth: true,
+	  responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+          	slidesToShow: 1,
+			arrows: false
+          }
+        },
+      ]
     });
 	$('.team-panel').slick({
       infinite: true,
@@ -20,7 +29,16 @@ $(window).ready(function () {
 	  nextArrow: $('.team__arrow_f'),
 	  dots: false,
 	  arrows: true,
-	  variableWidth: true
+	  variableWidth: true,
+	  responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+          	slidesToShow: 1,
+			arrows: false
+          }
+        },
+      ]
     });
 
 })
