@@ -200,7 +200,6 @@
 				display: none
 .main
 	width: 100%
-	min-width: 910px
 	+r(sm)
 		min-width: 300px
 	&-container
@@ -309,7 +308,8 @@
 		justify-content: center
 		width: 300px
 		height: 300px
-		min-width: 300px
+		min-height: 300px
+		min-width: 250px
 		background-color: #FFE040
 		border-radius: 5px
 		padding: 37px
@@ -330,6 +330,7 @@
 		font-weight: 300
 		color: #272727
 		line-height: 25px
+		width: 100%
 	&__form
 		position: relative
 		top: -60px
@@ -555,7 +556,7 @@
 		display: flex
 	&-item
 		&__img
-			width: 70px
+
 			height: 70px
 			margin-right: 20px
 		&__title
@@ -595,7 +596,7 @@
 		padding: 25px
 		padding-top: 35px
 		&-container
-			width: 100%
+			width: 90%
 			max-width: 1040px
 		&__item
 			display: flex
@@ -728,7 +729,7 @@
 				width: 90%
 				&:nth-child(1n+2)
 					display: none
-			+r(lg)
+			+r(xl)
 				width: 90%
 				&:nth-child(1n+3)
 					display: none
@@ -782,7 +783,7 @@
 			+r(sm)
 				width: 80%
 		&__descr
-			width: 900px
+			width: 90%
 			padding-bottom: 20px
 			+r(sm)
 				width: 80%
@@ -807,6 +808,8 @@
 				overflow: hidden
 	&-form-container
 		position: absolute
+		left: auto
+		top: auto
 		width: 100%
 		max-width: 1140px
 		+r(sm)
@@ -819,8 +822,7 @@
 		+r(sm)
 			max-width: 100%
 	&__nav
-		position: absolute
-		transform: translateY(-10px)
+		position: relative
 		z-index: 10
 		+r(sm)
 			position: relative
