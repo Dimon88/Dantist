@@ -160,6 +160,7 @@
 				z-index: 2
 	&-list
 		display: flex
+		align-items: center
 		height: 100%
 		flex-direction: row
 		+rfs(18px)
@@ -369,6 +370,7 @@
 			justify-content: space-between
 			align-items: center
 			color: white
+			width: 100%
 			padding-top: 15px
 			&__descr
 				width: 60%
@@ -766,6 +768,7 @@
 	width: 100%
 	&-container
 		padding-top: 40px
+		position: relative
 		width: 100%
 		display: flex
 		flex-direction: column
@@ -783,7 +786,7 @@
 			+r(sm)
 				width: 80%
 		&__descr
-			width: 90%
+			width: 80%
 			padding-bottom: 20px
 			+r(sm)
 				width: 80%
@@ -791,8 +794,7 @@
 		&_desktop
 			width: 100%
 			height: 600px
-			display: none
-			overflow: hidden
+			overflow: visible
 			display: flex
 			justify-content: center
 			+r(sm)
@@ -808,8 +810,8 @@
 				overflow: hidden
 	&-form-container
 		position: absolute
-		left: auto
-		top: auto
+		left: 0px
+		top: 30%
 		width: 100%
 		max-width: 1140px
 		+r(sm)
@@ -824,6 +826,7 @@
 	&__nav
 		position: relative
 		z-index: 10
+		transform: translateY(-40px)
 		+r(sm)
 			position: relative
 			transform: translateY(0px)
@@ -842,7 +845,6 @@
 	align-items: center
 	width: 100%
 	&-container
-		padding-top: 40px
 		width: 100%
 		display: flex
 		flex-direction: column
@@ -856,7 +858,6 @@
 		display: flex
 		justify-content: space-between
 		height: 300px
-		padding-top: 30px
 	&-list
 		&__title
 			padding-left: 8px
