@@ -40,5 +40,24 @@ $(window).ready(function () {
         },
       ]
     });
+    $('.intro-slide').slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.intro__b'),
+	  nextArrow: $('.intro__f'),
+	  dots: false,
+	  arrows: true,
+	  variableWidth: false,
+	  responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+          	slidesToShow: 1,
+			arrows: false
+          }
+        },
+      ]
+    });
 
 })

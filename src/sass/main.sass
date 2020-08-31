@@ -212,16 +212,28 @@
 	flex-direction: column
 	align-items: center
 	width: 100%
-	height: 900px
+	min-height: 900px
 	+r(sm)
 		background-size: auto 600px
 		background-position: 70% 10%
 		background-color: #FFF
-	background: url('../img/ispravlenie-prikusa-1.png') 50% 10% no-repeat
 	background-color: #EEE
 	transform: translateY(-27px)
 	z-index: 0
+	&-slide
+		width: 100%
+		max-width: 1140px
+
+		&__item
+			+r(sm)
+				min-height: 900px
 	&-container
+		height: 900px
+		padding-left: 10px
+		background: url('../img/ispravlenie-prikusa-1.png') 50% 10% no-repeat
+		+r(sm)
+			min-height: 900px
+			background: url('../img/ispravlenie-prikusa-1.png') 70% 0% no-repeat
 		display: flex
 		flex-direction: column
 		width: 100%
@@ -240,12 +252,12 @@
 		color: #272727
 		+r(sm)
 			text-align: center
-			width: 50%
-			order: 3
-			padding-top: 60px
+			width: 80%
+			order: 2
+			padding-top: 50px
 			+rfs(28px)
 	&__title
-		width: 50%
+		width: 80%
 		+rfs(48px)
 		text-transform: uppercase
 		font-weight: bold
@@ -255,8 +267,8 @@
 		+r(sm)
 			text-align: center
 			+rfs(40px)
-			order: 4
-			width: 80%
+			order: 3
+			width: 50%
 			padding-bottom: 80px
 	&__button
 		width: 265px
@@ -274,11 +286,12 @@
 		+r(sm)
 			display: none
 	&-arrows
+		position: relative
 		display: flex
 		align-items: stretch
 		width: 100%
 		+r(sm)
-			padding-top: 500px
+			padding-top: 800px
 			padding-left: 30px
 		&-item
 			height: 70px
@@ -298,6 +311,8 @@
 	align-items: center
 	width: 100%
 	transform: translateY(-27px)
+	+r(sm)
+		transform: translateY(0px)
 	&-container
 		width: 100%
 		display: flex
@@ -814,7 +829,6 @@
 		position: absolute
 		left: 0px
 		top: 30%
-		width: 100%
 		max-width: 1140px
 		+r(sm)
 			width: 100%
